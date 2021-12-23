@@ -141,3 +141,10 @@ const arthur = new CrazyCatMan()
 arthur.adoptCat('patches jr', 0, Infinity - 1)
 
 console.log(arthur)
+
+//GIT
+// initialize the git repo '''git init'''
+// check my git status '''git status'''
+// stage our commit '''git add *''' or '''git add -A'''
+// git status
+//git commit -m '''get commit -m "some message lol"'''
