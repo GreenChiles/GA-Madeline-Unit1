@@ -38,6 +38,28 @@ for (let i = 1; i<= 100; i++){
 // Wild Wild Life
 ////////////////////////////////
 
+const wolfy = ["Wolfy", "wolf", 16, "Yukon Territory"]
+const sharky = ["Sharky", "shark", 20, "Left Coast"]
+const plantee = ["Plantee", "plant",  5000 , "Mordor"]
+const porgee = ["Porgee", "Porg", 186, "Ahch-To"]
+const dart = ["D'Art" , "Demogorgan Dog", 2, "Upside Down"]
+
+console.log(plantee.indexOf(5000))// I dont have to indexOf to know what it is
+//I could always count but its nice to have a method to do it for me. (index: 2)
+plantee[2] += 1
+console.log(plantee)
+wolfy[3] = "Gotham City"
+console.log(wolfy)
+// D'Art? you mean dart?
+dart.push("Hawkins")
+console.log(dart)
+
+const Gameboy = Object.assign([], wolfy)
+//Object assign apperenty works on arrays. I think it might
+//be unnessary tho... i guess i could of just changed the name Wolfy to Gameboy
+// above or used another constant named Gameboy to store wolfy.
+Gameboy[0] = "Gameboy"
+console.log(Gameboy)
 
 ////////////////////////////////
 // Yell at the Ninja Turtles
