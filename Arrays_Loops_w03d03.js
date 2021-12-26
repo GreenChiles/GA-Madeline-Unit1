@@ -118,7 +118,27 @@ console.log(favMovies.indexOf("Django Unchained")) //index: -1
 ////////////////////////////////
 // Where is Waldo
 ////////////////////////////////
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+                    ["Lucinda", "Jacc", "Neff", "Snoop"],
+                    ["Petunia", ["Baked Goods", "Waldo"]]];
 
+                    const egg = whereIsWaldo.splice(1,1)
+                    console.log(egg)
+                    console.log(whereIsWaldo) //Eggbert gone.
+
+                    whereIsWaldo[1].splice(2,1, "No One")
+                    console.log(whereIsWaldo) //Neff is replaced
+                    
+
+                    console.table(whereIsWaldo) 
+                    //Finding Waldo
+                    console.log(whereIsWaldo)
+                    console.table(whereIsWaldo)
+                   const item = whereIsWaldo[2].splice(1,1)
+                   const Waldo = item[0].splice(1,1)
+                   console.log(item)
+                   console.log(  Waldo)
+        //see what i did there? i spliced a splice. */
 
 ////////////////////////////////
 //  Excited Kitten
