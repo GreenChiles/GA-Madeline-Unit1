@@ -65,7 +65,10 @@ console.log(Gameboy)
 // Yell at the Ninja Turtles
 ////////////////////////////////
 
-
+ninjaTurtles = ["Dontalello", "Leonardo", "Raphael", "Michaelangelo"]
+for (const elem of ninjaTurtles){
+    console.log(elem.toUpperCase() )
+}
 ////////////////////////////////
 // Methods, Revisited
 ////////////////////////////////
