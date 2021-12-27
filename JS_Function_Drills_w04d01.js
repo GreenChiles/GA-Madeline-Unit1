@@ -10,6 +10,8 @@
 // console.log runs immediattly when its written. Fun fact if you console.log
 // a console.log you will get an extra 'undefined' with your output.
 
+////PALINDROME////
+
 const palindrome = (str) => {
 var re = /[^A-Za-z0-9]/g
 str = str.toLowerCase().replace(re, '')
@@ -26,3 +28,18 @@ console.log(palindrome("racecar"))
 console.log(palindrome("overflow"))
 
 //source: freecodecamp.org/news/two-ways-to-check-for-palindromes-in-javascript-64fea8191fd7/
+//// SUM ARRAY////
+
+const iAmAnArray = [1,1,2,3,4,5,6]
+
+const sumArray = (arg) => {
+    let sum = 0
+    for (let i = 0; i < arg.length; i++){
+        sum += arg[i]
+    }
+    return sum
+}
+
+console.log(sumArray(iAmAnArray)) //22
+
+////PRIME NUMBERS////
