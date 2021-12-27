@@ -26,8 +26,8 @@ return true
 
 console.log(palindrome("racecar"))
 console.log(palindrome("overflow"))
-
 //source: freecodecamp.org/news/two-ways-to-check-for-palindromes-in-javascript-64fea8191fd7/
+
 //// SUM ARRAY////
 
 const iAmAnArray = [1,1,2,3,4,5,6]
@@ -43,3 +43,24 @@ const sumArray = (arg) => {
 console.log(sumArray(iAmAnArray)) //22
 
 ////PRIME NUMBERS////
+
+const checkPrime = (num) => {
+    for(let i = 2; i < num; i++){
+    if(num % i === 0) return false
+    return num > 1
+}
+}
+console.log(checkPrime(4))
+console.log(checkPrime(67))
+//source : stackoverflow.com/questions/40200089/number-prime-test-in-javascript
+
+//  const printPrimes = (num) => {
+//      for (let i = 2; i <= 100; i++){
+//         if ((i % 2 == 0) || (i % 3 == 0)){
+//             return i + ""
+            
+//         }
+//      }
+//  }
+ //??
+// console.log(printPrimes())
