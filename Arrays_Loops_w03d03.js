@@ -145,7 +145,8 @@ const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
 ////////////////////////////////
 let phrases = ["...human...why you taking pictures of me?...", 
 "...the catnip made me do it...", "...why does the red dot always get away.."]
-let random = phrases[Math.floor(Math.random() * phrases.length)]
+let random = phrases[Math.floor(Math.random() * phrases.length)] // Not part 
+//of function, i used this one on my first attempt that is comment out below.
 let a = phrases[0] 
 let b = phrases[1] 
 let c = phrases[2] 
@@ -186,8 +187,24 @@ for (let i = 1; i <= 20; i++){
 //I dont know how to make each seperate even number get a random 
 // result, i only know how to make all even numbers get the same 
 //random result. Im leaving the function not commented out because im more
-//proud of that attempt...
+//proud of that attempt... Ive also tried attaching the randomfunction to [i]
+//but that didnt work..
 
 ////////////////////////////////
 //  Find the Median
 ////////////////////////////////
+
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+
+//Expected output:
+//=> 15
+
+function median(arr){
+    arr.sort(function(a, b){
+        return a - b
+    })
+    let j = arr.length / 2
+    return j % 1 == 0 ? (arr[j - 1] + arr[j]) / 2 : arr[Math.ceil(j)]
+}
+console.log(median(nums))
+// source : stackoverflow.com/questions/25305640/find-median-vaules-from-array-in-javascript-8-values-or-9-values
