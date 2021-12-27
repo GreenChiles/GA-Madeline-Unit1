@@ -143,7 +143,50 @@ const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
 ////////////////////////////////
 //  Excited Kitten
 ////////////////////////////////
+let phrases = ["...human...why you taking pictures of me?...", 
+"...the catnip made me do it...", "...why does the red dot always get away.."]
+let random = phrases[Math.floor(Math.random() * phrases.length)]
+let a = phrases[0] 
+let b = phrases[1] 
+let c = phrases[2] 
+let theRandomNumber = Math.floor(Math.random() * 3) + 1
 
+const randomFunction = (arg, brg, crg) => {
+if (theRandomNumber == 1){
+    return arg
+} else if (theRandomNumber == 2){
+    return brg
+} else if (theRandomNumber == 3){
+    return crg
+} else {
+    
+}
+}
+//console.log(randomFunction(a, b, c))
+
+for (let i = 1; i <= 20; i++){
+    if(i % 2 == 0){
+        console.log(i + randomFunction(a, b ,c))
+    } else {
+        console.log(i)
+    }
+}
+/*
+for (let i = 1; i <= 20; i++){
+    if(i % 2 == 0){
+        console.log(i + random)
+    } else {
+        console.log(i)
+    }
+}
+
+*/
+
+//Okay, so i tried it two different ways and got the same problem.
+//I dont know how to make each seperate even number get a random 
+// result, i only know how to make all even numbers get the same 
+//random result. Im leaving the function not commented out because im more
+//proud of that attempt...
 
 ////////////////////////////////
 //  Find the Median
