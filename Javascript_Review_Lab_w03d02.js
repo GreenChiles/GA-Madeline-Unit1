@@ -121,13 +121,38 @@ const a = 4;
 
   //source: https://stackoverflow.com/questions/1230233/how-to-find-the-sum-of-an-array-of-numbers
   bankSum = [1,2,3,4,5,6,7,8,9,10].reduce(add, 0)
-
+  bankacct = [1,2,3,4,5,6,7,8,9,10]
   function add(addall, a) {
-      return addall + a
+      return addall  + a
   }
+  //I have two ways to find 55, one reduce method and a function with a for loop
+  function bankadd(arg) {
+      let sum = 0
+      for (let i = 0; i < arg.length; i++){
+          sum += arg[i]
+      }
+      return sum
+  }
+  console.log(bankadd(bankacct))
 
+  function bankdouble(){
+    let sum = 0
+    for (let i = 1; i <= 100; i++){
+        sum += i * 2
+    }
+    return sum
+  } //YAYYY, This is the one problem that got me tripped, up. solved it 
 
-  console.log(bankSum ** 2 * 52)
+  console.log(bankdouble())
+
+/*for (let i = 0; i < bankacct.length; i++){
+    let sum = 0
+    sum += +sum[i]
+    
+}*/
+//console.log(sum)
+
+  
 
   // |||. Arrays and Control flow 
   // A. Talk about it
