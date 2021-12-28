@@ -64,3 +64,40 @@ console.log(checkPrime(67))
 //  }
  //??
 // console.log(printPrimes())
+// ROCK PAPER SCISSORS
+
+const randomMove = () => {
+    const options = ["Rock", "Paper", "Scissors"]
+    const randomNum = Math.floor(Math.random() * 3)
+    return options[randomNum]
+}
+let theBrain = randomMove()
+console.log(theBrain)
+
+ const RockPaperScissors = (user, computer) => {
+     if (computer == "Rock" && user == "Rock"){
+         return "tie"
+     } else if (computer == "Rock" && user == "Paper"){
+         return " I lost. rats!!"
+     } else if (computer == "Rock" && user == "Scissors"){
+         return " Take that!"
+     } else if (computer == "Paper" && user == "Paper"){
+         return "..." 
+     } else if (computer == "Paper" && user == "Rock"){
+         return "*tears*"
+     } else if (computer == "Paper" && user == "Scissors"){
+         return "LOL, i won"
+     } else if (computer == "Scissors" && user == "Scissors"){
+         return "*game intensfies*"
+     } else if (computer == "Scissors" && user == "Paper"){
+         return "dead lol"
+     } else if (computer == "Scissors" && user == "Rock"){
+         return "Im a winner, Smash!!"
+     }
+ }
+
+ console.log(RockPaperScissors("Rock", theBrain))
+ // This RockPaperScissors function was made on the spot, by me. No reference
+ // to my RPS file or Stack overflow(LOL). Im pretty positive that there are shorter 
+ // and more effecient functions out there, but im very happy with this one. Its
+ //very easy to track. Nothings confusing here
