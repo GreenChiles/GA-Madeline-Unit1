@@ -1,5 +1,5 @@
-/*
-//Part A
+/*///////////////////////////////////////////////////////////////////////////
+////Part A. Q + A////
 How do we assign a value to a variable?
 -const, let, var
 let donkey = true
@@ -25,7 +25,7 @@ how you're going to solve a problem vs actually typing in code to solve it?
 */
 
 
-// B. STRINGS///
+//// B. STRINGS////
 let firstVariable ="Hello World"
 console.log(firstVariable)
 
@@ -43,7 +43,7 @@ const yourName  = "Logan"
 console.log("Hello my name is " + yourName)
 
 
-//C. Booleans
+////C. Booleans////
 const a = 4;
   const b = 53;
   const c = 57;
@@ -61,7 +61,7 @@ const a = 4;
   console.log(a + b == c); // note: a < b < c is NOT CORRECT (and is not a valid JS expression, think about using other math operations)
   console.log(a * a == d); // note: the answer is a simple arithmetic equation, not something "weird"
   
-  //D. The farm
+  ////D. The farm////
   let animal = "cow"
   if (animal == "cow"){
       console.log("moooo")
@@ -69,15 +69,15 @@ const a = 4;
       console.log("Hey! Your not a Cow!")
   }
 
-  //E. Drivers ED
+  ////E. Drivers ED////
   let myAge = 23
   if (myAge >= 16){
       console.log('Here\'s the Keys!')//notice the excape character '\'?
   } else {
       console.log("sorry your to young")
   }
-
-  // ||. Loops A. The Basics
+/////////////////////////////////////////////////////////////////////////////
+  //// ||. Loops A. The Basics////
   for (let i = 1; i<=10; i++){
       console.log(i)
   }
@@ -92,7 +92,7 @@ const a = 4;
       }
   }
 
-  //B. Get even{
+  ////B. Get even/////
   for (let i = 1; i <= 100; i++){
       console.log(i) //THis one prints duplicate evens and on the 
       //seccond even it prints the "<-- is an ..." Below i basically
@@ -103,7 +103,7 @@ const a = 4;
       } 
   }
 
-  //C. Give me Five 
+  ////C. Give me Five ////
 
   for (let i = 0; i <= 100; i++){
      // console.log("I found a " + i)
@@ -118,7 +118,7 @@ const a = 4;
       }
   }
 
-  //D. Savings 
+  ////D. Savings ////
 
   //source: https://stackoverflow.com/questions/1230233/how-to-find-the-sum-of-an-array-of-numbers
   bankSum = [1,2,3,4,5,6,7,8,9,10].reduce(add, 0)
@@ -154,9 +154,9 @@ const a = 4;
 //console.log(sum)
 
   
-
-  // |||. Arrays and Control flow 
-  // A. Talk about it
+//////////////////////////////////////////////////////////////////////////////
+ //// |||. Arrays and Control flow ////
+  //// A. Talk about it////
 
   // What are the things in an array called?
   // - elements
@@ -167,23 +167,25 @@ const a = 4;
 //What real-life thing could you model with an array?
 // lists of data
 
-//B Easy Does It
+////B. Easy Does It ////
 let quotes = ["Quote 1", "Quote 2", "Quote 3"]
 
-//C. 
+////C. Acessing elements ////
 
 randomThings = [1, 10, "Hello", true]
 console.log(randomThings[0])
 randomThings[2] = "world"
 console.log(randomThings)
 
-//d. Changes values
+////d. Changes values ////
 const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"]
 console.log(ourClass[2])
 ourClass[4] = "Octocat"
 console.log(ourClass)
 ourClass.push("Cloud City")
 console.log(ourClass)
+
+////E. Mix it up ////
 
 const myArray = [5, 10, 500, 20]
 myArray.push("Aegon", "OctoCat")
@@ -199,7 +201,7 @@ console.log(myArray) //The array mutated in a way that everthing but the middle
 // number changed positions. When you console log the array after reversing it
 // it fliped.
 
-//F. Biggie Smalls
+////F. Biggie Smalls////
 let biggeSmalls = 109
 if (biggeSmalls < 100){
     console.log("little number")
@@ -207,7 +209,7 @@ if (biggeSmalls < 100){
     console.log("Big Number")
 }
 
-//G. Monkey in the middle
+////G. Monkey in the middle////
 let num = 7
 if (num < 5){
     console.log("little number")
@@ -217,7 +219,7 @@ if (num < 5){
     console.log("Monkey!")
 }
 
-//H. Whats in your closet///
+////H. Whats in your closet////
 
 const kristynsCloset = [
     "left shoe",
@@ -259,29 +261,32 @@ const kristynsCloset = [
   console.log(thomsCloset[1][2]) //Pants
   console.log(thomsCloset[2][2]) //acceroies
   console.log("thom is looking fierece in a gray button-up, jeans and wool scarf!")
-  // are you asking for a simple console.log? or me to combine a string with bracket
-  //notation? for example of both, refer to line 232
+  
   thomsCloset[1][2] = "Footie Pajamas"
   console.log(thomsCloset)
 
-  // |V.Functions 
-  // A. printGreeting
+////////////////////////////////////////////////////////////////////////////
+  //// |V.Functions ////
+  //// A. printGreeting ////
 
   const printGreeting = (name) => {
       return "Hello there, " + name
   }
 console.log(printGreeting("Slimer"))
 
+//// B. printCool ////
 const printCool = (name) => {
     return name + " is cool"
 }
 console.log(printCool("Captain Reynolds"))
 
+//// C. calculateCube ////
 const calculateCube = (aSingleNumber) => {
     return aSingleNumber ** 3
 }
 console.log(calculateCube(3))  
 
+////D. isVowel ////
 const isVowel = (x) => {
     if(x == "a" || x == "A" || x == "e" || x == "E" || x == "i" || x == "I" 
     || x == "o" || x == "O" || x == "u" || x == "U"){
@@ -293,11 +298,13 @@ const isVowel = (x) => {
 
 console.log(isVowel("e"))
 
+//// E.getTwoLengths ////
 const getTwoLengths = (word, word2) => {
     return [word.length , word2.length]
 }
 console.log(getTwoLengths("diggity", "dog"))
 
+//// F.get multipleLengths ////
 let words = ["Hello", "dogs"]
 const getMultipleLengths = words.map(function(word){
     return word + ' : ' + word.length
@@ -307,7 +314,7 @@ console.log(getMultipleLengths)
 // I had a really hard time with this one. I decided on the map method
 // souce: stackoverflow.com/questions/33399786/get-length-of-every-element-in-array-javascript
 
-
+////G. maxOfThree ////
 const maxOfThree = (x,y,z) => {
     if (x >= y && x >= z){
         return x
@@ -322,6 +329,7 @@ const maxOfThree = (x,y,z) => {
 
 console.log(maxOfThree(6, 9, 3))
 
+////H. printLongestWord ////
 const printLongestWord = (arr) => {
     let long = arr[0]
     for (let i = 0; i < arr.length; i++ ){
@@ -334,8 +342,9 @@ const printLongestWord = (arr) => {
 
 console.log(printLongestWord(["Bojack", "princess", "dog", "Lochness Monster"]))
 
+///////////////////////////////////////////////////////////////////////////////
 //OBJECTS
-//A.Make a user object
+////A.Make a user object ////
 
 const user = {
     name : "Jerry",
@@ -343,15 +352,15 @@ const user = {
     age : 38,
     purchased : []
 }
-//B. Update the User
+////B. Update the User ////
 user.email = "CoolGuy@gmail.com"
 user.age ++  
 
-//C. Adding keys and values
+////C. Adding keys and values ////
 user.location ="New Mexico"
 
 
-//D. ShopAholic
+////D. ShopAholic ////
 console.log(user)
 user.purchased.push("carbohydrates")
 console.log(user)
@@ -359,7 +368,7 @@ user.purchased.push("Peace of mind")
 user.purchased.push("Merino jodhpurs")
 console.log(user.purchased[2])
 
-//E. Object-within-object
+////E. Object-within-object ////
 user.friend = {
     name: "Grace Hopper",
     age: 85,
@@ -376,7 +385,7 @@ console.log(user.friend)
 console.log(user.friend.purchased.indexOf("A latte"))
 console.log(user.friend.purchased[1])
 
-//F. Loops
+////F. Loops ////
 for (let i  in user.purchased){
         console.log(user.purchased[i])
     }
@@ -388,7 +397,7 @@ for (let i  in user.purchased){
 for (let j  in user.friend.purchased){
     console.log( user.friend.purchased[j])}
 
-//G. Functions
+////G. Functions ////
 const updateUser = () => {
     user.age += 1
     user.name = user.name.toUpperCase()
@@ -405,7 +414,7 @@ updateUser(user)
 console.log(user)
 
 
-
+//////////////////////////////////////////////////////////////////////////////////
 //BONUS
 //Cat Combinator
 const cat1 = {
