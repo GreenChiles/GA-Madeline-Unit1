@@ -1,4 +1,5 @@
 /*
+//Part A
 How do we assign a value to a variable?
 -const, let, var
 let donkey = true
