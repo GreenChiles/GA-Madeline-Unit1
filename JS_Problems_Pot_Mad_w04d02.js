@@ -45,8 +45,12 @@ console.log(setAlarm(true, false)) //true
 // Shout out to my classmate Luke Fleming, He reallly helped me get this one
 // i was stuck on it for hours!
 
+//// Disemvowling trolls ////
+const trollsBeGone = (trollString) => {
+   return trollString.replace(/[aeiou]/gi,'')
+}
 
 
-
-
+console.log(trollsBeGone("This website sucks yo, My grandma can make a better Website!"))
+// regEX is cool.
 
