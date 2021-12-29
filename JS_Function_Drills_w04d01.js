@@ -101,3 +101,15 @@ console.log(theBrain)
  // to my RPS file or Stack overflow(LOL). Im pretty positive that there are shorter 
  // and more effecient functions out there, but im very happy with this one. Its
  //very easy to track. Nothings confusing here
+
+ ////BONUS/////
+ const consoleTriangle = (length) => {
+    let segment = ""
+    for (let i = 1; i <= length; i++) {
+      segment += "#".repeat(i)+ "\n"
+    }
+    return segment
+  }
+  console.log(consoleTriangle(7))
+
+  //source: https://stackoverflow.com/questions/48930033/print-triangle-using-javascript-function/48930061
