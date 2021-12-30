@@ -103,6 +103,7 @@ console.log(theBrain)
  //very easy to track. Nothings confusing here
 
  ////BONUS/////
+ ////(The Triangle upWards and upside down)/////
  const consoleTriangle = (length) => {
     let segment = ""
     for (let i = 1; i <= length; i++) {
@@ -112,4 +113,15 @@ console.log(theBrain)
   }
   console.log(consoleTriangle(7))
 
+console.log("The Triangle....")
+console.log("")
+
+  const consoleUpsidedownTriangle = (length) => {
+      let segment = ""
+      for (let i = length; i > 0; i--){
+          segment += "#".repeat(i) + "\n"
+      }
+      return segment
+  }
+console.log(consoleUpsidedownTriangle(7))
   //source: https://stackoverflow.com/questions/48930033/print-triangle-using-javascript-function/48930061
