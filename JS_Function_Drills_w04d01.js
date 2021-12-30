@@ -123,5 +123,6 @@ console.log("")
       }
       return segment
   }
+  
 console.log(consoleUpsidedownTriangle(7))
   //source: https://stackoverflow.com/questions/48930033/print-triangle-using-javascript-function/48930061
