@@ -65,42 +65,83 @@ console.log(checkPrime(67))
  //??
 // console.log(printPrimes())
 // ROCK PAPER SCISSORS
-
 const randomMove = () => {
-    const options = ["Rock", "Paper", "Scissors"]
-    const randomNum = Math.floor(Math.random() * 3)
+    const options = ["Rock", "Paper", "Scissors", "Lizard", "Spock"]
+    const randomNum = Math.floor(Math.random() * 5)
     return options[randomNum]
 }
+
+//console.log(randomMove())
+
+
 let theBrain = randomMove()
-console.log(theBrain)
+//console.log(theBrain)
 
  const RockPaperScissors = (user, computer) => {
      if (computer == "Rock" && user == "Rock"){
-         return "tie"
+         return "Tie"
      } else if (computer == "Rock" && user == "Paper"){
-         return " I lost. rats!!"
+         return "Paper covers Rock, I Win!"
      } else if (computer == "Rock" && user == "Scissors"){
-         return " Take that!"
+         return "Rock crushes Scissors, I Lose!"
+     } else if (computer == "Rock" && user == "Lizard"){
+         return "Rock crushes Lizard, I Lose!"
+     } else if (computer == "Rock" && user == "Spock"){
+         return "Spock vaporizes Rock, I Win!"
+
+
      } else if (computer == "Paper" && user == "Paper"){
-         return "..." 
+         return "Tie" 
      } else if (computer == "Paper" && user == "Rock"){
-         return "*tears*"
+         return "Paper covers Rock, I Lose!"
      } else if (computer == "Paper" && user == "Scissors"){
-         return "LOL, i won"
+         return "Scissors cuts Paper, I Win!"
+     } else if (computer == "Paper" && user == "Lizard"){
+         return "Lizard eats Paper, I Win!"
+     } else if (computer == "Paper" && user == "Spock"){
+         return "Paper disproves Spock"   
+
+
      } else if (computer == "Scissors" && user == "Scissors"){
-         return "*game intensfies*"
+         return "Tie"
      } else if (computer == "Scissors" && user == "Paper"){
-         return "dead lol"
+         return "Scissors cuts Paper, I Lose!"
      } else if (computer == "Scissors" && user == "Rock"){
-         return "Im a winner, Smash!!"
+         return "Rock crushes Scissors, I Win!"
+     } else if (computer == "Scissors" && user == "Lizard"){
+         return "Scissors decapitates Lizard, I Lose!"
+     } else if (computer == "Scissors" && user == "Spock"){
+         return "Spock smashes Scissors, I Win!"
+
+
+     } else if (computer == "Lizard" && user == "Lizard"){
+         return "Tie"
+     } else if (computer == "Lizard" && user == "Rock"){
+         return "Rock crushes Lizard, I Win!"
+     } else if (computer == "Lizard" && user == "Paper"){
+         return "Lizard eats Paper, I Lose!"
+     } else if (computer == "Lizard" && user == "Scissors"){
+         return "Scissors decapitates Lizard, I Win!"
+     } else if (computer == "Lizard" && user == "Spock"){
+         return "Lizard poisons Spock, I Lose!"
+
+
+     } else if (computer == "Spock" && user == "Spock"){
+         return "Tie"
+     } else if (computer == "Spock" && user == "Rock"){
+         return "Spock vaporizes Rock, I Lose!"
+     } else if (computer == "Spock" && user == "Paper"){
+         return "Paper disproves Spock, I Win!"
+     } else if (computer == "Spock" && user == "Scissors"){
+         return "Spock smashes Scissors, I Lose!"
+     } else if (computer == "Spock" && user == "Lizard"){
+         return "Lizard poisons Spock, I Win!"
      }
  }
 
  console.log(RockPaperScissors("Rock", theBrain))
- // This RockPaperScissors function was made on the spot, by me. No reference
- // to my RPS file or Stack overflow(LOL). Im pretty positive that there are shorter 
- // and more effecient functions out there, but im very happy with this one. Its
- //very easy to track. Nothings confusing here
+
+ 
 
  ////BONUS/////
  ////(The Triangle upWards and upside down)/////
